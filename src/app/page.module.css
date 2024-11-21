@@ -1,0 +1,11 @@
+.background{
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 900px;
+  height: 900px;
+}

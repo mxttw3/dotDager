@@ -1,0 +1,208 @@
+
+.body {
+  display: flex;
+  margin: 0;
+}
+
+.header {
+  width: 18%;
+  background-image: url('../assets/headerImage.png');
+  background-size: cover;
+  padding: 1.5vw;
+  padding-top: 1.8vw;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100dvh;
+}
+
+.credits{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 0.6vw;
+}
+
+.bold{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.title{
+  font-size: 3vw;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+#title1{
+  padding-left: 1%;
+}
+#title2{
+  padding-left: 15%;
+}
+
+#title3{
+  padding-left: 29%;
+}
+
+.headerGrid {
+  width: 100%;
+  margin-top: auto;
+}
+
+.display{
+  display: flex;
+  padding-bottom: 1.5vh;
+}
+
+.divGrid1 {
+  width: 15%;
+
+}
+
+.divGrid2 {
+  width: 100%;
+}
+
+.leftText{
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 500;
+  text-decoration: underline;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-shadow: 0.2vw 0.03vw 0.7vw  #000000f1;
+  letter-spacing: 0.3vw;
+}
+
+
+.main {
+  background-image: url('../assets/backgroundImage.png');
+  background-size: cover;
+  width: 82%;
+  overflow-x: auto; 
+  z-index: 0;
+}
+
+.firstNavSquare{
+  padding-top: 0.7vh;
+}
+
+.br1{
+  height: 1.3vw;
+}
+
+.nav{
+  text-decoration: none;
+  color: black;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 0.3vw;
+  background-color: rgba(255, 255, 255, 0.425);
+}
+
+.loadingIcon{
+  width: 5vw;
+  height: auto;
+  padding-bottom: 1.1vh;
+}
+
+.burguerMenu1{
+  display: none;
+}
+
+.burguerMenu2{
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .header {
+    width: 0;
+    position: fixed;
+    width: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    overflow: hidden;
+    padding: 0;
+    overflow-y: auto;
+    z-index: 99;
+  }
+
+  .main {
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .burguerMenu1{
+    display: flex;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 7vh;
+    height: auto;
+    z-index: 99;
+  }
+
+  .burguerMenu2{
+    display: none;
+    width: 3vh;
+    height: auto;
+    text-shadow: 0.2vw 0.03vw 0.1vw  #000000f1;
+    position: absolute;
+    top: 5vh;
+    right: 7vw;
+    z-index: 99;
+  }
+  .title{
+    font-size: 10vw;
+  }
+
+  .leftText{
+    font-size: 4.5vw;
+  }
+
+  .nav{
+    font-size: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;  
+  }
+
+  .br1{
+    height: 5vw;
+  }
+
+  .display{
+    padding-bottom: 7vw;
+  }
+
+  .paddingBot{
+    width: 100%;
+    height: 3vh;
+  }
+
+  .padding{
+    padding-top: 3vh;
+    padding-left: 3vh;
+  }
+
+  .paddingSon{
+    display: flex;
+    gap: 100px;
+  }
+
+  .headerGrid{
+    padding-left: 3vh;
+  }
+
+  .extras{
+    display: none;
+  }
+
+}
